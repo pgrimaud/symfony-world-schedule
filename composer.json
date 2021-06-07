@@ -16,7 +16,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.2.5",
+        "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "nesbot/carbon": "^2.46",
@@ -27,6 +27,7 @@
         "symfony/yaml": "5.3.*"
     },
     "require-dev": {
+        "bamarni/composer-bin-plugin": "^1.4",
         "symfony/maker-bundle": "^1.30"
     },
     "config": {
@@ -57,9 +58,6 @@
         },
         "post-install-cmd": [
             "@auto-scripts"
-        ],
-        "post-update-cmd": [
-            "@auto-scripts"
         ]
     },
     "conflict": {
@@ -70,5 +68,6 @@
             "allow-contrib": false,
             "require": "5.3.*"
         }
-    }
+    },
+    "bin": ["build/symfony-world"]
 }

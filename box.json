@@ -1,0 +1,19 @@
+{
+  "directories": [
+    "config",
+    "data",
+    "src",
+    "vendor"
+  ],
+  "files": [
+    "composer.json"
+  ],
+  "exclude-composer-files": false,
+  "exclude-dev-files": false,
+  "output": "build/symfony-world",
+  "compression": "GZ",
+  "compactors": [
+    "KevinGH\\Box\\Compactor\\Json",
+    "KevinGH\\Box\\Compactor\\Php"
+  ]
+}

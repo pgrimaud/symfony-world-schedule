@@ -7,7 +7,7 @@ Based on [@nunomaduro](https://github.com/nunomaduro) idea ([Laracon](https://gi
 
 ## Quick start
 
-> Requires [PHP 7.2+](https://www.php.net/releases/)
+> Requires [PHP 7.4+](https://www.php.net/releases/)
 
 ```bash
 # First, install:
@@ -19,6 +19,8 @@ symfony-world
 
 ## Credits
 Most of the credits go to [@nunomaduro](https://github.com/nunomaduro) ([Laracon](https://github.com/nunomaduro/laracon-schedule) & [Alpine day](https://github.com/nunomaduro/alpine-day-schedule)) & written with [Symfony skeleton](https://symfony.com/doc/current/setup.html#creating-symfony-applications). Thank man ❤️
+
+Built with [Box](https://github.com/box-project/box).
 
 ## Licence
 Licensed under the terms of the MIT License.
