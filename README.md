@@ -24,5 +24,4 @@ Most of the credits go to [@nunomaduro](https://github.com/nunomaduro) ([Laracon
 Licensed under the terms of the MIT License.
 
 ## Copyrights
-
 This project is not affiliated with or endorsed by [Symfony](https://symfony.com/license).
