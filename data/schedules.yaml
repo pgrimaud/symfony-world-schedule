@@ -1,0 +1,344 @@
+events:
+  - name: 'SymfonyWorld Online Edition 2021 (day 1) - Schedule #1'
+    start_at: '2021-06-17 09:45:00'
+    end_at: '2021-06-17 16:00:00'
+    timezone: Europe/Paris
+    location: Online
+    language: English
+    tracks:
+      - name: Track Blackfire.io
+      - name: Track SensioLabs
+    schedules:
+      - start_at: 09:45
+        talks:
+          - name: Opening / Welcome session
+            speaker:
+            track: 2
+
+      - start_at: 10:00
+        talks:
+          - name: Keynote
+            speaker: Fabien Potencier
+            track: 2
+
+      - start_at: 11:10
+        talks:
+          - name: 'Symfony Forms: Advanced Use Cases'
+            speaker: Alexandre Salomé
+            track: 1
+          - name: Cartographing Symfony
+            speaker: Christian Flothmann,Denis Brumann
+            track: 2
+
+      - start_at: 11:25
+        talks:
+          - name: 'Break'
+            speaker:
+            track: all
+
+      - start_at: 11:55
+        talks:
+          - name: My Symfony application in Serverless cloud
+            speaker: Marie Minasyan
+            track: 1
+          - name: What's new in Doctrine 2021?
+            speaker: Benjamin Eberlei
+            track: 2
+
+      - start_at: 12:30
+        talks:
+          - name: Lunch
+            speaker:
+            track: all
+
+      - start_at: 13:30
+        talks:
+          - name: Feedback on our use of Varnish
+            speaker: Bastien Jaillot
+            track: 1
+          - name: You need an AutoMapper, but you don't know it yet!
+            speaker: Baptiste Leduc
+            track: 2
+
+      - start_at: 14:10
+        talks:
+          - name: 'Pedal to the metal: introducing Symfony Turbo'
+            speaker: Kévin Dunglas
+            track: 1
+          - name: Symfony Notifier Demystified
+            speaker: Jan Schädlich
+            track: 2
+
+      - start_at: 14:45
+        talks:
+          - name: Break
+            speaker:
+            track: all
+
+      - start_at: 15:15
+        talks:
+          - name: You're not in IT
+            speaker: Stefan Koopmanschap
+            track: 1
+
+      - start_at: 15:55
+        talks:
+          - name: Closing session of the first day
+            speaker:
+            track: 1
+  - name: 'SymfonyWorld Online Edition 2021 (day 1) - Schedule #2'
+    start_at: '2021-06-17 09:45:00'
+    end_at: '2021-06-17 16:00:00'
+    timezone: Europe/Paris
+    location: Online
+    language: English
+    tracks:
+      - name: Track Blackfire.io
+      - name: Track SensioLabs
+    schedules:
+      - start_at: 09:45
+        talks:
+          - name: Opening / Welcome session
+            speaker:
+            track: 2
+
+      - start_at: 10:00
+        talks:
+          - name: Keynote
+            speaker: Fabien Potencier
+            track: 2
+
+      - start_at: 11:10
+        talks:
+          - name: 'Symfony Forms: Advanced Use Cases'
+            speaker: Alexandre Salomé
+            track: 1
+          - name: Cartographing Symfony
+            speaker: Christian Flothmann,Denis Brumann
+            track: 2
+
+      - start_at: 11:25
+        talks:
+          - name: 'Break'
+            speaker:
+            track: all
+
+      - start_at: 11:55
+        talks:
+          - name: My Symfony application in Serverless cloud
+            speaker: Marie Minasyan
+            track: 1
+          - name: What's new in Doctrine 2021?
+            speaker: Benjamin Eberlei
+            track: 2
+
+      - start_at: 12:30
+        talks:
+          - name: Lunch
+            speaker:
+            track: all
+
+      - start_at: 13:30
+        talks:
+          - name: Feedback on our use of Varnish
+            speaker: Bastien Jaillot
+            track: 1
+          - name: You need an AutoMapper, but you don't know it yet!
+            speaker: Baptiste Leduc
+            track: 2
+
+      - start_at: 14:10
+        talks:
+          - name: 'Pedal to the metal: introducing Symfony Turbo'
+            speaker: Kévin Dunglas
+            track: 1
+          - name: Symfony Notifier Demystified
+            speaker: Jan Schädlich
+            track: 2
+
+      - start_at: 14:45
+        talks:
+          - name: Break
+            speaker:
+            track: all
+
+      - start_at: 15:15
+        talks:
+          - name: You're not in IT
+            speaker: Stefan Koopmanschap
+            track: 1
+
+      - start_at: 15:55
+        talks:
+          - name: Closing session of the first day
+            speaker:
+            track: 1
+
+  - name: 'SymfonyWorld Online Edition 2021 (day 2) - Schedule (#1)'
+    start_at: '2021-06-18 09:45:00'
+    end_at: '2021-06-18 16:10:00'
+    timezone: Europe/Paris
+    location: Online
+    language: English
+    tracks:
+      - name: Track Blackfire.io
+      - name: Track SensioLabs
+    schedules:
+      - start_at: 09:45
+        talks:
+          - name: Opening / Welcome session
+            speaker:
+            track: 2
+
+      - start_at: 10:00
+        talks:
+          - name: Towards Digital Sustainability
+            speaker: François Zaninotto
+            track: 2
+
+      - start_at: 11:10
+        talks:
+          - name: Can your code live without the Symfony Framework?
+            speaker: Hiromi Hishida
+            track: 1
+          - name: 'Building a SaaS product with Symfony : tips and tricks'
+            speaker: Titouan Galopin
+            track: 2
+
+      - start_at: 11:25
+        talks:
+          - name: 'Break'
+            speaker:
+            track: all
+
+      - start_at: 11:55
+        talks:
+          - name: A short tale about state machine
+            speaker: Łukasz Chruściel
+            track: 1
+          - name: Cypress, the E2E must learn from the past
+            speaker: Guillaume Loulier
+            track: 2
+
+      - start_at: 12:30
+        talks:
+          - name: Lunch
+            speaker:
+            track: all
+
+      - start_at: 13:30
+        talks:
+          - name: 'Runtime component: The game changer'
+            speaker: Tobias Nyholm
+            track: 1
+
+      - start_at: 14:10
+        talks:
+          - name: 'PasswordHasher Component: A simple yet powerful password hashing library'
+            speaker: Robin Chalas
+            track: 1
+          - name: What is the Symfony UID component?
+            speaker: Nicolas Grekas
+            track: 2
+
+      - start_at: 14:45
+        talks:
+          - name: Break
+            speaker:
+            track: all
+
+      - start_at: 15:15
+        talks:
+          - name: A Dynamic Frontend with Twig & Zero JavaScript? Say Hello to...
+            speaker: Ryan Weaver
+            track: 1
+
+      - start_at: 15:55
+        talks:
+          - name: Closing session of the first day
+            speaker:
+            track: 1
+  - name: 'SymfonyWorld Online Edition 2021 (day 2) - Schedule (#2)'
+    start_at: '2021-06-18 09:45:00'
+    end_at: '2021-06-18 16:10:00'
+    timezone: Europe/Paris
+    location: Online
+    language: English
+    tracks:
+      - name: Track Blackfire.io
+      - name: Track SensioLabs
+    schedules:
+      - start_at: 09:45
+        talks:
+          - name: Opening / Welcome session
+            speaker:
+            track: 2
+
+      - start_at: 10:00
+        talks:
+          - name: Towards Digital Sustainability
+            speaker: François Zaninotto
+            track: 2
+
+      - start_at: 11:10
+        talks:
+          - name: Can your code live without the Symfony Framework?
+            speaker: Hiromi Hishida
+            track: 1
+          - name: 'Building a SaaS product with Symfony : tips and tricks'
+            speaker: Titouan Galopin
+            track: 2
+
+      - start_at: 11:25
+        talks:
+          - name: 'Break'
+            speaker:
+            track: all
+
+      - start_at: 11:55
+        talks:
+          - name: A short tale about state machine
+            speaker: Łukasz Chruściel
+            track: 1
+          - name: Cypress, the E2E must learn from the past
+            speaker: Guillaume Loulier
+            track: 2
+
+      - start_at: 12:30
+        talks:
+          - name: Lunch
+            speaker:
+            track: all
+
+      - start_at: 13:30
+        talks:
+          - name: 'Runtime component: The game changer'
+            speaker: Tobias Nyholm
+            track: 1
+
+      - start_at: 14:10
+        talks:
+          - name: 'PasswordHasher Component: A simple yet powerful password hashing library'
+            speaker: Robin Chalas
+            track: 1
+          - name: What is the Symfony UID component?
+            speaker: Nicolas Grekas
+            track: 2
+
+      - start_at: 14:45
+        talks:
+          - name: Break
+            speaker:
+            track: all
+
+      - start_at: 15:15
+        talks:
+          - name: A Dynamic Frontend with Twig & Zero JavaScript? Say Hello to...
+            speaker: Ryan Weaver
+            track: 1
+
+      - start_at: 15:55
+        talks:
+          - name: Closing session of the first day
+            speaker:
+            track: 1
