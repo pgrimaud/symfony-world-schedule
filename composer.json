@@ -56,7 +56,7 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd"
         },
-        "post-install-cmd": [
+        "post-autoload-dump": [
             "@auto-scripts"
         ]
     },
@@ -69,5 +69,5 @@
             "require": "5.3.*"
         }
     },
-    "bin": ["build/symfony-world"]
+    "bin": ["./build/symfony-world"]
 }

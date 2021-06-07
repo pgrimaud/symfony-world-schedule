@@ -22,6 +22,9 @@ Most of the credits go to [@nunomaduro](https://github.com/nunomaduro) ([Laracon
 
 Built with [Box](https://github.com/box-project/box).
 
+## Build phar archive
+Requires docker, then : `docker run --rm --interactive --tty --volume="$(pwd):/app" ajardin/humbug-box compile -vvv`
+
 ## Licence
 Licensed under the terms of the MIT License.
 

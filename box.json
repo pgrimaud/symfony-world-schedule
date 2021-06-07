@@ -1,12 +1,14 @@
 {
+  "main": "bin/console",
   "directories": [
+    "bin",
     "config",
     "data",
     "src",
     "vendor"
   ],
   "files": [
-    "composer.json"
+    ".env.local.php"
   ],
   "exclude-composer-files": false,
   "exclude-dev-files": false,
