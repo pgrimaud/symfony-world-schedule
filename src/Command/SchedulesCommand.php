@@ -249,8 +249,8 @@ class SchedulesCommand extends Command
         }
 
         $table->setStyle('box-double');
-        $table->setColumnWidth(1, 75);
-        $table->setColumnWidth(2, 75);
+        $table->setColumnWidth(1, 60);
+        $table->setColumnWidth(2, 60);
         $table->render();
     }
 }

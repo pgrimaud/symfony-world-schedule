@@ -1,6 +1,18 @@
 {
-    "type": "project",
-    "license": "proprietary",
+    "name": "pgrimaud/symfony-world-schedule",
+    "description": "Get the SymfonyWord Online 2021 schedule from the terminal.",
+    "keywords": ["framework", "symfony", "console", "symfony world", "console", "cli"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/pgrimaud/symfony-world-schedule/issues",
+        "source": "https://github.com/pgrimaud/symfony-world-schedule"
+    },
+    "authors": [
+        {
+            "name": "Pierre Grimaud",
+            "email": "grimaud.pierre@gmail.com"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {

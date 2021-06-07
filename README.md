@@ -3,7 +3,7 @@ A CLI tool that gives you the [SymfonyWorld](https://live.symfony.com/2021-world
 
 Based on @nunomaduro idea ([Laracon](https://github.com/nunomaduro/laracon-schedule) & [Alpine day](https://github.com/nunomaduro/alpine-day-schedule)) & fastly written with [Symfony skeleton](https://symfony.com/doc/current/setup.html#creating-symfony-applications) & the awesome [Console component](https://symfony.com/doc/current/components/console.html). 😍
 
-![image](https://user-images.githubusercontent.com/1866496/121067456-5c8d8880-c7cb-11eb-9cb1-7fafd70c24cf.png)
+![SymfonyWorld Online](https://user-images.githubusercontent.com/1866496/121070174-ac218380-c7ce-11eb-8598-610bb7ed2a28.png)
 
 ## Quick start
 

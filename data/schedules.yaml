@@ -174,7 +174,7 @@ events:
             speaker:
             track: 1
 
-  - name: 'SymfonyWorld Online Edition 2021 (day 2) - Schedule (#1)'
+  - name: 'SymfonyWorld Online Edition 2021 (day 2) - Schedule #1'
     start_at: '2021-06-18 09:45:00'
     end_at: '2021-06-18 16:10:00'
     timezone: Europe/Paris
@@ -258,7 +258,7 @@ events:
           - name: Closing session of the first day
             speaker:
             track: 1
-  - name: 'SymfonyWorld Online Edition 2021 (day 2) - Schedule (#2)'
+  - name: 'SymfonyWorld Online Edition 2021 (day 2) - Schedule #2'
     start_at: '2021-06-18 09:45:00'
     end_at: '2021-06-18 16:10:00'
     timezone: Europe/Paris
