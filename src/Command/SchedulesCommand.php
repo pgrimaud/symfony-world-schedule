@@ -97,7 +97,7 @@ class SchedulesCommand extends Command
 
     public function getTimeZone(SymfonyStyle $io): string
     {
-        $fileName = getenv('HOME') . '/.symfony-world';
+        $fileName = getenv('HOME') ? getenv('HOME') . '/.symfony-world' : './.symfony-world';
 
         $filesystem = new Filesystem();
         if (!$filesystem->exists($fileName)) {
@@ -130,11 +130,24 @@ class SchedulesCommand extends Command
                 return exec('date +%Z');
 
             case strpos(php_uname('s'), 'Windows') !== false:
-                // todo
+                $tz = exec('tzutil /g');
+                return ltrim($this->getTimezoneFromWindows($tz));
 
             default:
                 $io->error('Your OS is not supported at this time.');
                 die();
+        }
+    }
+
+    private function getTimezoneFromWindows($tz)
+    {
+        $json = file_get_contents(__DIR__ . '/../CommandData/windowsZones.json');
+        $zones = json_decode($json, true);
+
+        foreach ($zones as $z => $iana) {
+            if($z === $tz) {
+                return $iana['iana'][0];
+            }
         }
     }
 
