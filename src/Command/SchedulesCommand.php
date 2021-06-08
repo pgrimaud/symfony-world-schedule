@@ -97,7 +97,7 @@ class SchedulesCommand extends Command
 
     public function getTimeZone(SymfonyStyle $io): string
     {
-        $fileName = './.symfony-world';
+        $fileName = '~/.symfony-world';
 
         $filesystem = new Filesystem();
         if (!$filesystem->exists($fileName)) {
