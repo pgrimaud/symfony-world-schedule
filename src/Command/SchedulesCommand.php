@@ -39,25 +39,25 @@ class SchedulesCommand extends Command
         $eventsToDisplay = [];
         foreach ($data['events'] as $event) {
             $hoursLeft = Carbon::parse($event['start_at'], $event['timezone'])
-                               ->setTimezone($userTimeZone)
-                               ->diffInHours($now, false);
+                ->setTimezone($userTimeZone)
+                ->diffInHours($now, false);
 
             $minutesLeft = Carbon::parse($event['start_at'], $event['timezone'])
-                                 ->setTimezone($userTimeZone)
-                                 ->diffInMinutes($now, false);
+                ->setTimezone($userTimeZone)
+                ->diffInMinutes($now, false);
 
             $daysLeft = Carbon::parse($event['start_at'], $event['timezone'])
-                              ->setTimezone($userTimeZone)
-                              ->diffInDays($now, false);
+                ->setTimezone($userTimeZone)
+                ->diffInDays($now, false);
 
             if ($daysLeft < 0) {
-                $daysLeft          = abs($daysLeft);
+                $daysLeft = abs($daysLeft);
                 $eventsToDisplay[] = array_merge($event, ['start_in' => "Start in $daysLeft days."]);
             } elseif ($hoursLeft < 0) {
-                $hoursLeft         = abs($hoursLeft);
+                $hoursLeft = abs($hoursLeft);
                 $eventsToDisplay[] = array_merge($event, ['start_in' => "Start in $hoursLeft hours."]);
             } elseif ($minutesLeft < 0) {
-                $minutesLeft       = abs($minutesLeft);
+                $minutesLeft = abs($minutesLeft);
                 $eventsToDisplay[] = array_merge($event, ['start_in' => "Start in $minutesLeft minutes."]);
             }
         }
@@ -145,7 +145,7 @@ class SchedulesCommand extends Command
         $zones = json_decode($json, true);
 
         foreach ($zones as $z => $iana) {
-            if($z === $tz) {
+            if ($z === $tz) {
                 return $iana['iana'][0];
             }
         }
@@ -165,8 +165,8 @@ class SchedulesCommand extends Command
                         $eventDate->format('d F Y'),
                         [
                             'colspan' => count($event['tracks']),
-                            'style'   => new TableCellStyle([
-                                'align'   => 'center',
+                            'style' => new TableCellStyle([
+                                'align' => 'center',
                                 'options' => 'bold',
                             ]),
                         ]),
@@ -176,13 +176,13 @@ class SchedulesCommand extends Command
                     new TableCell($event['tracks'][0]['name'], [
                         'style' => new TableCellStyle([
                             'align' => 'center',
-                            'fg'    => 'green',
+                            'fg' => 'green',
                         ]),
                     ]),
                     new TableCell($event['tracks'][1]['name'], [
                         'style' => new TableCellStyle([
                             'align' => 'center',
-                            'fg'    => 'green',
+                            'fg' => 'green',
                         ]),
                     ]),
                 ],
@@ -197,8 +197,8 @@ class SchedulesCommand extends Command
                         $schedule['talks'][0]['name'],
                         [
                             'colspan' => count($event['tracks']),
-                            'style'   => new TableCellStyle([
-                                'align'   => 'center',
+                            'style' => new TableCellStyle([
+                                'align' => 'center',
                                 'options' => 'bold',
                             ]),
                         ]
@@ -211,7 +211,7 @@ class SchedulesCommand extends Command
                             'by ' . $schedule['talks'][0]['speaker'],
                             [
                                 'colspan' => count($event['tracks']),
-                                'style'   => new TableCellStyle([
+                                'style' => new TableCellStyle([
                                     'align' => 'center',
                                 ]),
                             ]
@@ -227,7 +227,7 @@ class SchedulesCommand extends Command
 
                 // talk is only on track 2?
                 if (count($schedule['talks']) === 1 && $schedule['talks'][0]['track'] === 2) {
-                    $rowTalk[]    = new TableCell();
+                    $rowTalk[] = new TableCell();
                     $rowSpeaker[] = new TableCell();
                 }
 
@@ -236,7 +236,7 @@ class SchedulesCommand extends Command
                         $talk['name'],
                         [
                             'style' => new TableCellStyle([
-                                'align'   => 'center',
+                                'align' => 'center',
                                 'options' => 'bold',
                             ]),
                         ]);
