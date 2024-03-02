@@ -1,4 +1,4 @@
-{
+    {
     "name": "pgrimaud/symfony-world-schedule",
     "description": "Get the SymfonyWord Online 2021 schedule from the terminal.",
     "keywords": ["framework", "symfony", "console", "symfony world", "console", "cli"],
@@ -16,15 +16,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=7.4",
+        "php": "^8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "nesbot/carbon": "^2.46",
-        "symfony/console": "5.3.*",
-        "symfony/dotenv": "5.3.*",
-        "symfony/flex": "^1.3.1",
-        "symfony/framework-bundle": "5.3.*",
-        "symfony/yaml": "5.3.*",
+        "nesbot/carbon": "^3.0",
+        "symfony/console": "^5.4 || ^6.4 || ^7.0",
+        "symfony/dotenv": "^5.4 || ^6.4 || ^7.0",
+        "symfony/flex": "^2",
+        "symfony/framework-bundle": "^5.4 || ^6.4 || ^7.0",
+        "symfony/yaml": "^5.4 || ^6.4 || ^7.0",
         "ext-json": "*"
     },
     "require-dev": {
@@ -35,7 +35,10 @@
         "preferred-install": {
             "*": "dist"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/flex": true
+        }
     },
     "autoload": {
         "psr-4": {
@@ -65,8 +68,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false,
-            "require": "5.3.*"
+            "allow-contrib": true
         }
     },
     "bin": ["./build/symfony-world"]

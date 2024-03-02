@@ -3,6 +3,7 @@
 namespace App\Command;
 
 use Carbon\Carbon;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\{Table, TableCell, TableCellStyle, TableSeparator};
 use Symfony\Component\Console\Input\InputInterface;
@@ -11,15 +12,9 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Yaml\Yaml;
 
+#[AsCommand('app:schedules', 'Display SymfonyWorld online scheduling')]
 class SchedulesCommand extends Command
 {
-    protected static $defaultName = 'app:schedules';
-    protected static $defaultDescription = 'Display SymfonyWorld online scheduling';
-
-    protected function configure()
-    {
-        $this->setDescription(self::$defaultDescription);
-    }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
@@ -50,6 +45,7 @@ class SchedulesCommand extends Command
                 ->setTimezone($userTimeZone)
                 ->diffInDays($now, false);
 
+            $eventsToDisplay[] = array_merge($event, ['start_in' => "was $daysLeft day ago."]);
             if ($daysLeft < 0) {
                 $daysLeft = abs($daysLeft);
                 $eventsToDisplay[] = array_merge($event, ['start_in' => "Start in $daysLeft days."]);
